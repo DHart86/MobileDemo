@@ -1,0 +1,174 @@
+.homeBlock {
+  height: 40vh;
+  background-color: tomato;
+  background-image: url("dab-1692452.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: 100% 200%;
+}
+
+h1 {
+  padding-top:55px;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px black;
+}
+
+.homeBlock h1 {
+font-family: 'Waiting for the Sunrise', cursive;
+}
+
+.homeHeader .fa {
+  font-size: 30px
+}
+
+.fa-times {
+  right:10px;
+  top:10px;
+  position:absolute;
+  color:white;
+  font-size:35px;
+}
+
+.hidden {
+  display:none;
+}
+
+nav {
+  list-style:none;
+  font-size:20px;
+}
+
+nav li {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+nav li a {
+  color:white;
+}
+
+.burger {
+  background-color:tomato!important;
+  border:0px;
+}
+
+.slothBox {
+  position:relative;
+}
+
+.slothBox p {
+  position:absolute;
+  bottom:0px;
+  right:40px;
+  font-family: 'Barrio', cursive;
+  font-size:22px;
+}
+
+#pageone {
+  text-align:center;
+}
+
+.buttonWrap {
+  position:absolute;
+  border:purple;
+  font-size:40px;
+  width:100%;
+  top:50%;
+  margin-left:-15px;
+}
+
+.ui-shadow {
+  box-shadow:0 1px 3px tomato!important;
+}
+
+.ui-shadow {
+  box-shadow:0px!important;
+}
+
+.hBut {
+  border: 2px solid tomato!important;
+  font-size: 40px;
+  margin-left:5px!important;
+  margin-right:5px!important;
+  background-color:#111!important;
+}
+
+.hBut .fa {
+  color:#eee;
+}
+
+p {
+  color: #ddd;
+}
+
+.bottomNav i {
+  font-size:30px
+}
+
+.hBut:hover {
+  background-color: #111!important;
+}
+
+.hRow , .hBut {
+  text-align: center;
+  color:white!important;
+  text-shadow:1px 1px 1px black!important;
+}
+
+#myPop {
+  -webkit-transition-duration: 2.9s; /* Safari */
+    transition-duration: 2.9s;
+}
+
+img {
+  width:100%;
+  box-shadow: 0px 3px 63px tomato;
+  border-radius:45px;
+   animation: slothFade 2s infinite;
+    animation-timing:ease-in-out;
+}
+
+@keyframes slothFade {   
+    50% {opacity: 0.3;} 
+}
+
+a {
+  text-decoration:none;
+}
+
+.ui-btn.ui-checkbox-off:after {
+    background-color: lightgray!important;
+  }
+
+.ui-page-theme-b .ui-btn.ui-btn-active, html .ui-bar-b .ui-btn.ui-btn-active, html .ui-body-b .ui-btn.ui-btn-active, html body .ui-group-theme-b .ui-btn.ui-btn-active, html head + body .ui-btn.ui-btn-b.ui-btn-active, .ui-page-theme-b .ui-checkbox-on:after, html .ui-bar-b .ui-checkbox-on:after, html .ui-body-b .ui-checkbox-on:after, html body .ui-group-theme-b .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-b:after, .ui-page-theme-b .ui-flipswitch-active, html .ui-bar-b .ui-flipswitch-active, html .ui-body-b .ui-flipswitch-active, html body .ui-group-theme-b .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active, .ui-page-theme-b .ui-slider-track .ui-btn-active, html .ui-bar-b .ui-slider-track .ui-btn-active, html .ui-body-b .ui-slider-track .ui-btn-active, html body .ui-group-theme-b .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-b .ui-btn-active {
+    background-color: #3388cc;
+    border: 0;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #005599;
+
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    border:0;
+  }
+
+  .ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited {
+    color: white!important;
+}
+
+.ui-page-theme-a .ui-body-inherit {
+  background-color:#222!important;
+}
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    border: 0px!important;
+  }
+
+
+
+
+
+
+/* http://themeroller.jquerymobile.com/?ver=1.4.5&style_id=20170127-5 */
+
+

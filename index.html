@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Demo Test</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="BlackRed.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+ 
+
+<div data-role="page" id="pageone" data-theme="a">
+  
+  <div data-role="header" class="homeHeader">
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow burger"><i class="fa fa-bars" aria-hidden="true" id="burgerIcon"></i>
+</a>
+  </div>
+  
+  <div data-role="main" class="ui-content homeBlock">
+    <h1>SPLAT</h1>
+      <div class="buttonWrap">
+        <div data-role="controlgroup" data-type="horizontal" class="hRow">
+    <a href="#pagethree" data-transition="flow" class="ui-btn hBut"><i class="fa fa-calculator" aria-hidden="true"></i></a>
+    <a href="#" class="ui-btn hBut"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  </div>
+  <div data-role="controlgroup" data-type="horizontal" class="hRow">
+    <a href="#" class="ui-btn hBut"><i class="fa fa-cloud-upload" aria-hidden="true"></i></a>
+    <a href="#" class="ui-btn hBut"><i class="fa fa-cog" aria-hidden="true"></i></a>
+  </div>
+</div>
+  </div>
+
+  <div data-role="footer" class="bottomNav" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-transition="slideup"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#pagethree" data-transition="slideup"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
+        <li><a href="#pagetwo" data-transition="slideup"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="#pagefour" data-transition="slideup"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="panel" id="myPanel"> 
+       <a href="#pageone" data-rel="close"><i class="fa fa-times" aria-hidden="true" id="closeIcon"></i></a>
+
+     <nav>
+       <li><a href="#pageone">One</a></li>
+       <li><a href="#pagetwo">Two</a></li>
+       <li><a href="#pagethree">Three</a></li>
+       <li><a href="#pagefour">Four</a></li>
+     </nav>
+  </div>
+
+</div>
+
+<!-- End Page 1 -->
+
+
+
+<!-- Page 2 -->
+
+<div data-role="page" id="pagetwo" data-theme="a">
+  <div data-role="header">
+    <h1>Message Panel</h1>
+  </div>
+
+ <div data-role="main" class="ui-content">
+   <p>  Page will function as popup playground</p>
+    <a href="#p2pop" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+
+    <div data-role="popup" id="p2pop" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <p>I have a close button at the top right corner.</p>
+      <p><b>Tip:</b> You can also click outside to close me.</p>
+    </div>
+   <!-- Slide Up -->
+  <a href="#myPop" data-rel="popup" class="ui-btn btrans" data-transition="slideup" id="doit">Slide up</a>
+   
+   <div data-role="popup" id="myPop" class="ui-content">
+      <p>This is a simple popup.</p>
+    </div>   
+  <!-- End Slide Up --> 
+   
+<form method="post" action="demoform.asp">
+      <div class="ui-field-contain">
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">       
+        <input type="date" name="bday" id="bday" placeholder="Date">
+        <input type="email" name="email" id="email" placeholder="Your email..">
+      </div>
+      <fieldset data-role="controlgroup">
+      <legend>Pick an option:</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </fieldset>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
+  
+  </div>
+
+ <div data-role="footer" class="bottomNav" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#pagethree"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
+        <li><a href="#pagetwo"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="#pagefour"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- End Page 2 -->
+
+
+
+<!-- Start Page 3 with Sloth -->
+
+<div data-role="page" id="pagethree" data-theme="a">
+  <div data-role="header">
+    <h1>Danger</h1>
+  </div>
+  
+ <div data-role="main" class="ui-content">
+    <div data-role="collapsible">
+      <h4>Do Not Click</h4>
+      <div class="slothBox">
+      <p>Rarrrrr.</p>
+      <img src="http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-Fwsgxo7q0xKSSzZiqvqhkg2rPvkhl5jKXc_VAtyV2TN_eDeLx/">
+      </div>
+   </div>   
+  </div> 
+  
+  <div data-role="footer" class="bottomNav" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#pagethree"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
+        <li><a href="#pagetwo"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="#pagefour"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<!-- End page 3 -->
+
+
+
+
+<!-- Page 4 start -->
+<div data-role="page" id="pagefour" data-theme="a">
+ 
+  <div data-role="header">
+    <h1>Settings</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+
+
+    <ul data-role="listview">
+      <li><a href="#log" data-rel="popup">List Item</a></li>
+      <li><a href="#">List Item</a></li>
+      <li><a href="#">List Item</a></li>
+    </ul><br>
+
+
+<div data-role="popup" id="log" class="ui-content" style="min-width:250px;">
+      <form method="post" action="demoform.asp">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in">
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div data-role="footer" class="bottomNav" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#pagethree"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></li>
+        <li><a href="#pagetwo"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="#anylink"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- End Page 4 -->
+
+
+</body>
+</html>
